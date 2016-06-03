@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/black"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -18,7 +19,48 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Take Picture"
+        android:text="CARGAR PERSONAS"
+        android:textSize="30dp"
+        android:background="@drawable/roundedbutton2"
+        android:textColor="@android:color/white"
         android:id="@+id/button1"
         android:layout_alignParentBottom="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:text="JUGAR"
+        android:background="@drawable/test"
+        android:id="@+id/button"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Borrar\nCargados"
+        android:id="@+id/button2"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"
+        android:layout_alignTop="@+id/imageView1"
+        android:background="@drawable/roundedbuton"
+        android:textSize="12dp"
+        android:onClick="BorrarCargados"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:text="PISTA"
+        android:background="@drawable/rounded3"
+        android:id="@+id/button3"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:visibility="invisible"
+        android:onClick="DarPista" />
 </RelativeLayout>
